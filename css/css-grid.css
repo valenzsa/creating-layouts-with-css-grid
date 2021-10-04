@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 1fr); */ /*auto fills up the remaining space; */
+  /* grid-template-rows: min-content auto min-content; */
+
+  grid-template: min-content auto min-content / repeat(auto-fill, 1fr);
+}
+
+header,
+footer {
+  grid-column-start: 1; /*header's line starts at 1*/
+  grid-column-end: 4;
+}
